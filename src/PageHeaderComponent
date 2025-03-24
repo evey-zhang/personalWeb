@@ -1,0 +1,38 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+function PageHeader({ title, blurb , titleStyle= {} , blurbStyle = {}}) {
+    
+    //default styles
+    const defaultTitleStyle = {
+        fontSize: '32px',
+        fontFamily: "Gluten",
+        color:  '--darkgreen-color',
+        ...titleStyle,
+    }
+    const defaultBlurbStyle = {
+        fontSize: '18px',
+        fontFamily: "Gluten",
+        color:  '--darkgreen-color',
+        ...blurbStyle,
+    }
+    // Full-screen container styles
+    const fullScreenStyle = {
+        height: '100vh', // 100% of the viewport height
+        width: '100%',   // 100% of the width
+        display: 'flex',
+        flexDirection: 'column', // Stack title and blurb vertically
+        justifyContent: 'center', // Vertically center content
+        alignItems: 'center',    // Horizontally center content
+        textAlign: 'center',     // Center text
+    };
+    return (
+        <>
+            <h1>{title}</h1>
+            <p>{blurb}</p>
+            <
+        </>
+    );
+}
+
+export default PageHeader;

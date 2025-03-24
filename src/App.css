@@ -1,19 +1,77 @@
+
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0rem;
   text-align: center;
+  width: 100%;
+
+  /*color pallete */
+  --darkgreen-color: #788757;
+  --mediumgreen-color: #ACBD89;
+  --lightgreen-color: #C0D494;
+  --darkpink-color: #835C5D;
+  --medpink-color: #B18A8B;
+  --lightpink-color: #DBA1A1;
+  --darkpurple-color: #8C6B92;
+  --medpurple-color: #CAAACF;
+  --lightpurple-color: #E9BFE3;
+
 }
 
+.title {
+  display: flex;
+  min-height: 100vh;
+  /* background-image: url('./image/titleBackground.png'); */
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* title page */
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transform: rotate(-15deg);
+}
+
+.content h1 {
+  font-size: 56px;
+  font-weight: bolder;
+  padding-bottom: 0cap;
+  margin-bottom: 0;
+
+}
+
+.content a {
+  color: white;
+  background-color: var(--darkgreen-color);
+  padding: 12px 25px;
+  border-radius: 18px;
+}
+
+/* Fix this */
+.content a:hover {
+  filter: drop-shadow(0 0 2em #CAAACF);
+}
+
+
+/*Starter Code
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
-}
+} 
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -22,6 +80,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -39,4 +98,6 @@
 
 .read-the-docs {
   color: #888;
-}
+} 
+
+*/
