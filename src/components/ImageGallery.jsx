@@ -1,32 +1,39 @@
 import React, { useState } from 'react';
 
-function ImageGallery({ images = [], backgroundColor = '#f0f0f0' , imageBgColor = "#f0f0f0"}) {
-  const [currentIndex, setCurrentIndex] = useState(0); 
+function ImageGallery({
+  images = [],
+  backgroundColor = '#f0f0f0',
+  imageBgColor = '#f0f0f0',
+  titleColor = 'darkgreen', 
+  blurbColor = 'darkgreen',  
+}) {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToNextImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length); 
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
   const goToImage = (index) => {
-    setCurrentIndex(index); 
+    setCurrentIndex(index);
   };
 
   return (
     <div style={{ ...styles.galleryContainer, backgroundColor }}>
       {/* Image Title */}
-      <h2 style={styles.imageTitle}>{images[currentIndex].title}</h2>
-      
-      
-        
-      <div style={{...styles.imageContainer, backgroundColor: imageBgColor}}>
+      <h2 style={{ ...styles.imageTitle, color: titleColor }}>
+        {images[currentIndex].title}
+      </h2>
+
+      <div style={{ ...styles.imageContainer, backgroundColor: imageBgColor }}>
         <img
           src={images[currentIndex].src}
           alt={images[currentIndex].title}
           style={styles.image}
         />
         {/* Image Blurb */}
-
-        <p style={styles.imageBlurb}>{images[currentIndex].blurb}</p>
+        <p style={{ ...styles.imageBlurb, color: blurbColor }}>
+          {images[currentIndex].blurb}
+        </p>
       </div>
 
       {/* Dots for image navigation */}
@@ -37,14 +44,16 @@ function ImageGallery({ images = [], backgroundColor = '#f0f0f0' , imageBgColor 
             onClick={() => goToImage(index)}
             style={{
               ...styles.dot,
-              backgroundColor: index === currentIndex ? '#333' : '#ccc', 
+              backgroundColor: index === currentIndex ? '#333' : '#ccc',
             }}
           />
         ))}
       </div>
 
       {/* Next Button */}
-      <button onClick={goToNextImage} style={styles.nextButton}>Next</button>
+      <button onClick={goToNextImage} style={styles.nextButton}>
+        Next
+      </button>
     </div>
   );
 }
@@ -84,13 +93,11 @@ const styles = {
   imageTitle: {
     marginTop: '10px',
     fontSize: '36px',
-    color: "darkgreen",
     fontFamily: 'Gluten, sans-serif',
-    alignItems: "left",
+    alignItems: 'left',
   },
   imageBlurb: {
     fontSize: '18px',
-    color: 'darkgreen',
     fontFamily: 'Gluten, sans-serif',
     marginTop: '10px',
     maxWidth: '80%',

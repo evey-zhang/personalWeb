@@ -9,21 +9,21 @@ import TextComponent from '../components/TextComponent';
 
 
 {/*Images*/}
-import flowImage from "../image/plantFlow.png"
-import PDRImage from "../image/pueblodelrio.png";
-import mockUps from "../image/Plant Mockups.png";
-import largeMockUp from "../image/mockupLarge.png";
-import prototype2 from '../image/prototype2.png'
-import plantCharacter from '../image/plantCartoons.png'
-import database from '../image/Database.png'
-import multithreading from '../image/Multithreading.png'
-import networking from '../image/networking.png'
-import emailPlant from '../image/emailPlant.png'
-import guestFlow from '../image/guestFlow.png'
-import loginPage from '../image/loginPage.png'
-import plantFunctions from '../image/plantFunctions.png'
-import splashPage from '../image/plantSplashPage.png'
-import techStack from '../image/techStack.png'
+import flowImage from "../image/plant/plantFlow.png"
+import PDRImage from "../image/puebloDelRio/pueblodelrio.png";
+import mockUps from "../image/plant/Plant Mockups.png";
+import largeMockUp from "../image/plant/mockupLarge.png";
+import prototype2 from '../image/plant/prototype2.png'
+import plantCharacter from '../image/plant/plantCartoons.png'
+import database from '../image/plant/Database.png'
+import multithreading from '../image/plant/Multithreading.png'
+import networking from '../image/plant/networking.png'
+import emailPlant from '../image/plant/emailPlant.png'
+import guestFlow from '../image/plant/guestFlow.png'
+import loginPage from '../image/plant/loginPage.png'
+import plantFunctions from '../image/plant/plantFunctions.png'
+import splashPage from '../image/plant/plantSplashPage.png'
+import techStack from '../image/plant/techStack.png'
 
 
 
@@ -61,8 +61,6 @@ function PlantPage() {
 
                 />
 
-
-        
                  <ContentSlide
                     title="Why Plant?"
                     isLeftRightLayout = {true}

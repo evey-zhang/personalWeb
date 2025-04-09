@@ -12,6 +12,7 @@ function ContentSlide({
     titleBackgroundColor = '#f0f0f0', 
     hasBackground = false, 
     rectBackgroundColor = '#d3d3d3',
+    minHeight,  // New prop to optionally control the minHeight of the container
 }) {
 
     const defaultTitleStyle = {
@@ -48,6 +49,7 @@ function ContentSlide({
         justifyContent: 'flex-start', 
         alignItems: 'left',
         backgroundColor: bgColor || '#f0f0f0',
+        minHeight: minHeight || 'auto', // Conditionally apply the minHeight if provided
     };
 
     const imageContainerStyle = {

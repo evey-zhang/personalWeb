@@ -1,6 +1,6 @@
 import React from 'react';
 
-function TransitionSlide({ bgColor, title, imageSrc, titleStyle = {}, imageStyle = {} }) {
+function TransitionSlide({ bgColor, title, imageSrc, trapColor = 'lightyellow', titleStyle = {}, imageStyle = {} }) {
 
     const defaultTitleStyle = {
         fontSize: '38px',
@@ -40,7 +40,7 @@ function TransitionSlide({ bgColor, title, imageSrc, titleStyle = {}, imageStyle
         display: 'flex', 
         justifyContent: 'center', 
         alignItems: 'center', 
-        backgroundColor: 'lightyellow',
+        backgroundColor: trapColor,
         
     };
 

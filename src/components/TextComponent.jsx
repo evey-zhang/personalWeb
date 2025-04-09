@@ -4,29 +4,33 @@ function TextWithBackground({
   title = '',
   text = '',
   backgroundColor = '#ffffff',
-  fontColor = '#000000',
+  blurbColor = '#000000',
   fontFamily = 'Arial, sans-serif',
-  padding = '20px',
-  fontSize = '20px'
+  padding = '5vw 20vw',
+  titleSize = '36px',
+  titleColor = '#000000',
+  blurbSize = '20px',
+  
+
 }) {
   const containerStyle = {
     backgroundColor,
-    color: fontColor,
     fontFamily,
-    padding,
     textAlign: 'left',
     width: '100%',
     boxSizing: 'border-box',
-    padding: '5vw 20vw',
+    padding: padding,
 
   };
 
   const titleStyle = {
-    fontSize: '24px',
+    fontSize: titleSize,
     fontWeight: 'bold',
+    color: titleColor,
   };
   const textStyle = {
-    fontSize, 
+    fontSize: blurbSize,
+    color: blurbColor,
   };
 
   const textContent = text.split('\n').map((line, index) => (
