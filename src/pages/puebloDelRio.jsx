@@ -11,7 +11,7 @@ import Footer from '../components/Footer';
 
 
 {/*Images*/ }
-import frontpage from "../image/puebloDelRio/puebloDelRio.png"
+import frontpage from "../image/puebloDelRio/pueblodelrio.png"
 import mockup from "../image/puebloDelRio/mockup.png"
 import map from "../image/puebloDelRio/map.png"
 import mockup2 from "../image/puebloDelRio/pdrmockup2.png"
