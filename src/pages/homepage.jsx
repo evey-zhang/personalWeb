@@ -44,7 +44,7 @@ function HomePage() {
       <section id="projects">
         <ProjectTitle
           title="Pueblo Del Rio"
-          blurb="This is the description for my first project. It's a lot of fun!"
+          blurb="As part of my captsone course, this project was comissioned by the Community Safety Partership Service of the LAPD to encourage amicable communication between residents of Pueblo Del Rio and police officers. This application was built using the Flutter framework and is web app, IOS, and android compatible."
           imageSrc={ PDRImage }
           titleStyle={ { color: 'darkblue', fontSize: '36px' } }
           blurbStyle={ { color: 'darkgray', fontSize: '20px' } }
@@ -57,7 +57,7 @@ function HomePage() {
 
         <ProjectTitle
           title="Plant"
-          blurb="This is the description for my first project. It's a lot of fun!"
+          blurb="This web application was created to help beginner gardeners. enabling users add plants to their virutal garden and keep track of when to water each type of plant. This web application was made using Java, utilizing the Spring Boot framework!"
           imageSrc={ plantCharacter }
           titleStyle={ { color: "var(--lightgreen-color)", fontSize: '36px' } }
           blurbStyle={ { color: 'lightyellow', fontSize: '20px' } }
@@ -70,7 +70,7 @@ function HomePage() {
 
         <ProjectTitle
           title="Plan My Day"
-          blurb="This is the description for my first project. It's a lot of fun!"
+          blurb="This android application was made to help people visitng LA plan their day during their trip! Users can pick destinations and we will create an itinerary for you within the alloted time."
           imageSrc={comingSoon  }
           titleStyle={ { color: 'var(--darkgreen-color)', fontSize: '36px' } }
           blurbStyle={ { color: 'darkgray', fontSize: '20px' } }

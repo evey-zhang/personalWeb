@@ -1,8 +1,13 @@
 import React from 'react';
 
-function Footer() {
+function Footer({
+    backgroundColor ='lightyellow',
+    fontColor = '#ffffff',
+    iconColor = 'var(--darkgreen-color)'
+
+}) {
     const footerStyle = {
-        backgroundColor: 'lightyellow',
+        backgroundColor: backgroundColor,
         padding: '20px',
         textAlign: 'center',
         bottom: 0,
@@ -11,26 +16,26 @@ function Footer() {
 
     const linkStyle = {
         textDecoration: 'none',
-        color: 'var(--darkgreen-color)',
+        color: fontColor,
         margin: '0 10px',
         fontSize: '18px',
     };
 
     const iconStyle = {
-        fontSize: '24px',  // Adjust the size of the icon
+        fontSize: '24px',  
         marginRight: '8px',
-        color: 'var(--darkgreen-color)',  // Set the default color
-        transition: 'color 0.3s ease',    // Smooth color transition on hover
+        color: iconColor,  
+        transition: 'color 0.3s ease',    
     };
 
     const iconHoverStyle = {
-        color: '#0a66c2',  // LinkedIn blue color
+        color: '#0a66c2',  
     };
 
     const headingStyle = {
-        fontFamily: 'Gluten, sans-serif',  // Apply the desired font here
-        fontSize: '20px',                 // Optional: change font size
-        color: 'var(--darkgreen-color)',  // Optional: change font color
+        fontFamily: 'Gluten, sans-serif',  
+        fontSize: '20px',                 
+        color: fontColor,  
     };
 
     return (

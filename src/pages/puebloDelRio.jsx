@@ -117,7 +117,7 @@ function PuebloDelRioPage() {
                     imageStyle={ { width: '100%', borderRadius: '5px' } }
                     bgColor="var(--lightblue)"
                     rectBackgroundColor="var(--lightblue)"
-                    imageSrc={ desktop}
+                    imageSrc={ desktop }
 
                 />
 
@@ -126,7 +126,7 @@ function PuebloDelRioPage() {
                         {
                             src: flow,
                             title: 'Authenticated User Flow',
-                            blurb: '',
+                            blurb: 'Users can toggle between the three main pages using the navbar',
                         },
                         {
                             src: guestFlow,
@@ -170,12 +170,12 @@ function PuebloDelRioPage() {
                         {
                             src: login,
                             title: 'Login and Signup',
-                            blurb: 'Authentication for Username and Password uses fetch API to post username and password for validation in backend SQL server. Different errors/responses are sent back based on correct/incorrect inputs. If Signup/Login is valid, it navigates to user homepage.'
+                            blurb: 'Authentication for Username and Password uses firebase authentication API to sign users up and login users.'
                         },
                         {
                             src: features,
                             title: 'Features',
-                            blurb: 'In the homepage, the user is able to see their own garde. Here, they can delete plants or add plants by selecting the type and the last time watered. Based on this information, the application will send reminder emails on when to water each plant. The most recent watering time/date is updated when the user presses the "watered" button and it turns blue. '
+                            blurb: 'There are three main features of this app: 1) a posting feature 2) a messaging feature 3) a resource bulletin board. '
                         },
 
                         {
@@ -240,7 +240,12 @@ function PuebloDelRioPage() {
                 />
 
                 {/* Footer */ }
-                <Footer></Footer>
+                <Footer
+                    backgroundColor="var(--mediumblue)"
+                    fontColor="var(--policeblue)"
+                    iconColor='var(--lightorange)'
+
+                />
 
 
 
