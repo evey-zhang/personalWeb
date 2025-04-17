@@ -29,8 +29,8 @@ function HomePage() {
   return (
     <>
 
-      {/*NavBar */}
-      <Navbar/>
+      {/*NavBar */ }
+      <Navbar />
       {/* Title Section */ }
       <section className="title" style={ { backgroundImage: `url(${TitleImage})` } }>
         <div className="content">
@@ -51,7 +51,7 @@ function HomePage() {
           imageStyle={ { width: '78%', borderRadius: '8px' } }
           buttonText="Learn More"
           buttonbgColor="var(--darkgreen-color)"
-          onClick={handleLearnMoreClickPDR}
+          onClick={ handleLearnMoreClickPDR }
 
         />
 
@@ -71,22 +71,26 @@ function HomePage() {
         <ProjectTitle
           title="Plan My Day"
           blurb="This android application was made to help people visitng LA plan their day during their trip! Users can pick destinations and we will create an itinerary for you within the alloted time."
-          imageSrc={comingSoon  }
+          imageSrc={ comingSoon }
           titleStyle={ { color: 'var(--darkgreen-color)', fontSize: '36px' } }
           blurbStyle={ { color: 'darkgray', fontSize: '20px' } }
           imageStyle={ { width: '80%', borderRadius: '8px' } }
           buttonText="Learn More"
           buttonbgColor="var(--darkgreen-color)"
-          bgColor="var(--lightpurple-color)"
-          onClick={handleLearnMoreClickPMD}
-          
+          onClick={ handleLearnMoreClickPMD }
+
         />
       </section>
 
       {/* Footer */ }
-      <Footer></Footer>
+      <Footer
+        backgroundColor="var(--lightgreen-color)"
+        fontColor="var(--darkgreen-color)"
+        iconColor="var(--darkgreen-color)"
 
-    
+      />
+
+
     </>
   );
 }

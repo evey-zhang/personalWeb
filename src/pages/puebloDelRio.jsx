@@ -51,7 +51,7 @@ function PuebloDelRioPage() {
                 <TransitionSlide
                     title="Pueblo Del Rio"
                     imageSrc={ frontpage }
-                    titleStyle={ { color: "var(--lightorange)", fontSize: '36px' } }
+                    titleStyle={ { color: "var(--lightorange)", fontSize: 'clamp(10px, 3vw, 36px)'} }
                     imageStyle={ { width: '80%', borderRadius: '8px' } }
                     bgColor="var(--mediumblue)"
                     trapColor='var(--lightorange)'
@@ -63,8 +63,8 @@ function PuebloDelRioPage() {
                     isLeftRightLayout={ false }
                     blurb="Pueblo Del Rio was formerly a high crime area of South Los Angeles and this unit was dispatched into this area to empower this community and work together with them to uplift them. This includes supporting the elderly, kids, and households of every kind. The Pueblo Del Rio App was an idea created to help the community and the police communicate. This is supposed to be a platform for the police to reach the community and vice versa so that there is seamless, non-conflictual communication to prevent negative contact."
                     imageSrc={ mockup }
-                    titleStyle={ { color: "var(--policeorange)", fontSize: '36px' } }
-                    blurbStyle={ { color: "var(--darkpink-color)", fontSize: '28px' } }
+                    titleStyle={ { color: "var(--policeorange)", fontSize: 'clamp(10px, 3vw, 36px)' } }
+                    blurbStyle={ { color: "var(--darkpink-color)", fontSize: 'clamp(7px, 2vw, 22px)' } }
                     imageStyle={ { width: '100%', borderRadius: '8px' } }
                     buttonText="Learn More"
                     buttonbgColor="var(--darkgreen-color)"
@@ -78,8 +78,8 @@ function PuebloDelRioPage() {
                     blurb="The LAPD recently established the Community Safety Partnership committee, using a specific group of officers to patrol a specific community for patrol and community engagement in the Pueblo Del Rio area. LAPD representative, Alberto Talapio, enlisted our help to build a multi-functional platform to facilitate community formation. 
                     "
                     imageSrc={ map }
-                    titleStyle={ { color: "orange", fontSize: '36px' } }
-                    blurbStyle={ { color: "lightyellow", fontSize: '22px' } }
+                    titleStyle={ { color: "orange", fontSize: 'clamp(10px, 3vw, 36px)' } }
+                    blurbStyle={ { color: "lightyellow", fontSize: 'clamp(7px, 2vw, 22px)' } }
                     imageStyle={ { width: '80%', borderRadius: '8px' } }
                     bgColor="var(--policeblue)"
 
@@ -101,7 +101,7 @@ function PuebloDelRioPage() {
                 <TransitionSlide
                     title="Architectural Design"
                     imageSrc={ PDRImage }
-                    titleStyle={ { color: "var(--lightorange)", fontSize: '36px' } }
+                    titleStyle={ { color: "var(--lightorange)", fontSize: 'clamp(10px, 3vw, 36px)' } }
                     imageStyle={ { width: '80%', borderRadius: '8px' } }
                     bgColor="var(--mediumblue)"
                     trapColor='var(--lightorange)'
@@ -112,8 +112,8 @@ function PuebloDelRioPage() {
                     hasBackground={ true }
                     isLeftRightLayout={ false }
                     blurb="The aim was to create a platform to unite the community, ensuring better communication and safety. Our app had three main features, which included a homepage, where users could post community announcements, a message page for residents to directly get in touch with police officers assigned to the area, and a bulletin board for common resources like parking information, street sweeping, and even childcare help. "
-                    titleStyle={ { color: "var(--lightpink-color)", fontSize: '36px' } }
-                    blurbStyle={ { color: "var(--darkpink-color)", fontSize: '20px' } }
+                    titleStyle={ { color: "var(--lightpink-color)", fontSize: 'clamp(10px, 3vw, 36px)' } }
+                    blurbStyle={ { color: "var(--darkpink-color)", fontSize: 'clamp(7px, 2vw, 22px)' } }
                     imageStyle={ { width: '100%', borderRadius: '5px' } }
                     bgColor="var(--lightblue)"
                     rectBackgroundColor="var(--lightblue)"
@@ -146,8 +146,8 @@ function PuebloDelRioPage() {
                     hasBackground={ true }
                     isLeftRightLayout={ true }
                     blurb="Our database was built in firebase Where “users” and “Posts” were the main tables, connected by the User ID. Within the “Post” table, another “Comment” array is nested inside. For password authentication and tokenization, we used the built in Firebase Authentication packages."
-                    titleStyle={ { color: "orange", fontSize: '36px' } }
-                    blurbStyle={ { color: "var(--darkpink-color)", fontSize: '20px' } }
+                    titleStyle={ { color: "orange", fontSize: 'clamp(10px, 3vw, 36px)' } }
+                    blurbStyle={ { color: "var(--darkpink-color)", fontSize: 'clamp(7px, 2vw, 22px)' } }
                     imageStyle={ { width: '100%', borderRadius: '5px' } }
                     bgColor="var(--lightblue)"
                     rectBackgroundColor="var(--lightblue)"
@@ -158,7 +158,7 @@ function PuebloDelRioPage() {
                 <TransitionSlide
                     title="UI Design & App Flow"
                     imageSrc={ PDRImage }
-                    titleStyle={ { color: "var(--lightorange)", fontSize: '36px' } }
+                    titleStyle={ { color: "var(--lightorange)", fontSize: 'clamp(10px, 3vw, 36px)' } }
                     imageStyle={ { width: '80%', borderRadius: '8px' } }
                     bgColor="var(--mediumblue)"
                     trapColor='var(--lightorange)'
@@ -193,7 +193,7 @@ function PuebloDelRioPage() {
                 <TransitionSlide
                     title="Reflection"
                     imageSrc={ PDRImage }
-                    titleStyle={ { color: "var(--darkpink-color)", fontSize: '36px' } }
+                    titleStyle={ { color: "var(--darkpink-color)", fontSize: 'clamp(10px, 3vw, 36px)' } }
                     imageStyle={ { width: '80%', borderRadius: '8px' } }
                     bgColor="var(--mediumblue)"
                     trapColor='var(--lightorange)'
@@ -231,8 +231,8 @@ function PuebloDelRioPage() {
                     hasBackground={ true }
                     isLeftRightLayout={ true }
                     blurb={ <span>If you are curious to learn more about this project, check out our GitHub <a href="https://github.com/jennykim515/El-Pueblo-Del-Rio" target="_blank" rel="noopener noreferrer">here</a>.</span> }
-                    titleStyle={ { color: "var(--policeblue)", fontSize: '36px' } }
-                    blurbStyle={ { color: "var(--darkpink-color)", fontSize: '20px' } }
+                    titleStyle={ { color: "var(--policeblue)", fontSize: 'clamp(10px, 3vw, 36px)'} }
+                    blurbStyle={ { color: "var(--darkpink-color)", fontSize: 'clamp(7px, 2vw, 22px)'} }
                     imageStyle={ { width: '100%', borderRadius: '5px' } }
                     bgColor="var(--mediumblue)"
                     rectBackgroundColor="var(--lightorange)"
@@ -246,9 +246,6 @@ function PuebloDelRioPage() {
                     iconColor='var(--lightorange)'
 
                 />
-
-
-
             </div>
 
 

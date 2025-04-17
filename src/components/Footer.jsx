@@ -53,7 +53,7 @@ function Footer({
                 </a>
 
                 {/* Resume Icon */ }
-                <a href="/path/to/your/resume.pdf" target="_blank" rel="noopener noreferrer" style={ linkStyle }>
+                <a href="https://drive.google.com/file/d/1fIZjpSr6IqeMx90fh1tdhea3TqZ62y5-/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={ linkStyle }>
                     <i style={ iconStyle } className="fas fa-file-pdf"></i>Resume
                 </a>
             </div>
